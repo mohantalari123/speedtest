@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed type</title>
+    <style>
+        .border{
+            font-size: 16px;
+        	width: 290px;
+            height: 230px;
+            margin: 20px;
+        	padding-left: 10px;
+        	border: 2px solid black;
+        	border-radius: 10px;
+            text-align: justify;
+            margin-left: 550px;
+            
+
+            
+        }
+        input{
+            width: 260px;   
+    height: 80px;
+    border-radius: 5px;
+    
+    
+    
+
+        }
+        img{
+            width:80px;
+            height:80px; 
+            margin-left:560px;
+        }
+        .button{
+            margin-left: 550px;
+            color: blue;
+            
+            
+        }
+        .image-container{
+            display: flex;
+        }
+        #timerDisplay{
+            margin-left: 50px;
+            font-size: 20px;
+        }
+        #btcolor{
+            color: blue;
+        }
+        
+    </style>
+
+</head>
+<body bgcolor="mediumpurple">
+    <h1 align="center"><font color="red">Speed Typing test</font></h1>
+    <h3 align="center"> On your fingers lets set Go!</h3>
+    <div class="image-container">
+    <img src="../../time.jpg" /> 
+    <div id="timerDisplay" style="display: none;"></div></div>
+    <div class="border">
+        
+    <p>No matter how carefully you plan your<br> goals they will never be more than pipe<br> dreams unless you purse them with<br> gusto.</p>
+    <input
+    id="box"
+    type="text"
+    placeholder="Type Here"
+    autocomplete="off"
+    onclick="startTyping()"
+    />
+    <div id="error-display" style="display: none;"></div>
+</div>
+<div class="button">
+    <button onclick="endTyping()" id=" btcolor">Submit</button>
+    <button onclick="reset()">Reset</button>
+</div>
+<script src="./speed.js"></script>
+</body>
+</html>
